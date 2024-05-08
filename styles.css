@@ -1,0 +1,71 @@
+#container {
+  margin: 32px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  height: 85vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
+    sans-serif;
+  display: relative;
+}
+
+#main-heading {
+  display: flex;
+  flex-direction: row;
+}
+
+.heart {
+  width: 250px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  --_m: radial-gradient(#000 69%, #0000 70%) 84.5%/50%;
+  -webkit-mask-box-image: var(--_m);
+  mask-border: var(--_m);
+  clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+}
+
+#right-panel {
+  max-width: 600px;
+  display: grid;
+  grid-template-areas:
+    "one two"
+    "three four"
+    "five five";
+  gap: 8px;
+  margin-bottom: 100px;
+}
+
+#left-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.grid-container {
+  display: grid;
+  place-items: center; /* Centers content horizontally and vertically */
+  height: 100%; /* Set the height of the container */
+}
+
+.btn {
+  display: inline-block;
+  padding: 30px 30px;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
