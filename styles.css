@@ -1,7 +1,56 @@
+/* BIG SCREENS */
+@media (min-width: 1000px) {
+  #container {
+    display: flex;
+  }
+
+  h1 {
+    font-size: 96px;
+  }
+
+  h3 {
+    margin-bottom: 96px;
+  }
+
+  h4 {
+    font-size: 24px;
+    margin-bottom: 48px;
+  }
+
+  .heart {
+    width: 250px;
+  }
+  #right-panel {
+    max-width: 600px;
+  }
+
+  #right-panel img {
+    border: 1px solid green;
+    border-radius: 32px;
+  }
+}
+/* End media query */
+
+h3 {
+  margin-top: 24px;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+
+h4 {
+  max-width: 700px;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+h5 {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
 #container {
   margin: 32px;
   height: 100%;
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
@@ -13,7 +62,7 @@
 }
 
 body {
-  height: 85vh;
+  height: 95vh;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
     sans-serif;
   display: relative;
@@ -22,6 +71,7 @@ body {
 #main-heading {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .heart {
@@ -35,14 +85,12 @@ body {
 }
 
 #right-panel {
-  max-width: 600px;
   display: grid;
   grid-template-areas:
     "one two"
     "three four"
     "five five";
   gap: 8px;
-  margin-bottom: 100px;
 }
 
 #left-panel {
@@ -66,6 +114,6 @@ body {
   text-decoration: none;
   font-size: 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 32px;
   cursor: pointer;
 }
