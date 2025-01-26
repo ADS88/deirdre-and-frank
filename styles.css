@@ -1,5 +1,5 @@
 /* BIG SCREENS */
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   #container {
     display: flex;
   }
@@ -23,12 +23,8 @@
   #right-panel {
     max-width: 600px !important;
   }
-
-  #right-panel img {
-    border: 1px solid green !important;
-    border-radius: 32px !important;
-    width: 250px !important;
-    height: 200px !important;
+  #names {
+    flex-direction: column !important;
   }
 }
 /* End media query */
@@ -46,6 +42,7 @@ h3 {
 h4 {
   max-width: 700px;
   font-weight: 300;
+  margin-bottom: 16px;
 }
 
 h5 {
@@ -71,6 +68,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
     sans-serif;
   display: relative;
+  background-color: #fafafa;
 }
 
 #main-heading {
@@ -90,12 +88,10 @@ body {
 }
 
 #right-panel {
-  display: grid;
-  grid-template-areas:
-    "one two"
-    "three four"
-    "five five";
   gap: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 #left-panel {
@@ -112,20 +108,43 @@ body {
 
 .btn {
   display: inline-block;
-  padding: 30px 30px;
+  padding: 30px 0px;
   background-color: #4caf50;
   color: white;
   text-align: center;
   text-decoration: none;
   font-size: 20px;
   border: none;
-  border-radius: 32px;
+  border-radius: 8px;
   cursor: pointer;
+  width: 100%;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+#right-panel .link {
+  border-radius: 8px;
+  border: 1px solid green;
+  width: 100%;
+  background-color: white;
+}
+
+#right-panel a {
+  display: flex;
+  color: inherit;
+  text-decoration: none;
+  align-items: center;
 }
 
 #right-panel img {
-  border: 1px solid green;
   border-radius: 32px;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: 100px;
+}
+
+#names {
+  display: flex;
+  flex-direction: row;
 }
