@@ -121,10 +121,11 @@ body {
   border-radius: 8px;
   cursor: pointer;
   width: 100%;
+  transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 .btn:hover {
-  opacity: 0.9;
+  background-color: #45a049;
 }
 
 a p {
